@@ -10,7 +10,7 @@
 # The Android APK lives in your GitHub release. Replace ayononsocial (and the repo name if different).
 [[redirects]]
   from = "/download/android"
-  to = "https://github.com/ayononsocial/dc-legacy/releases/latest/download/dc-legacy.apk"
+     to = "https://github.com/ayononsocial/demo/releases/latest/download/dc-legacy.apk"
   status = 302
   force = true
 
