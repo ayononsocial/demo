@@ -1,0 +1,49 @@
+{
+  "name": "dclegacy",
+  "private": true,
+  "version": "2.15.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.js",
+    "test:app": "vite build --mode test && node scripts/e2e.mjs",
+    "shots": "vite build --mode test && node scripts/shots.mjs",
+    "android": "vite build && npx cap sync android && npx cap open android",
+    "test:campus": "vite build --mode test && node scripts/campus-e2e.mjs",
+    "test:community": "vite build --mode test && node scripts/community-e2e.mjs",
+    "test:insights": "vite build --mode test && node scripts/insights-probe.mjs",
+    "test:clubs": "node scripts/clubs-e2e.mjs",
+    "test:clubs-rls": "node scripts/clubs-rls-check.mjs",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/ios": "^8.5.2",
+    "@capacitor/local-notifications": "^8.3.1",
+    "@capacitor/share": "^8.0.3",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4",
+    "@supabase/supabase-js": "^2.117.2",
+    "qrcode-generator": "^1.4.4",
+    "tesseract.js": "^7.0.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.2",
+    "@eslint/js": "^9.39.5",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "eslint": "^9.39.5",
+    "globals": "^15.15.0",
+    "pdfjs-dist": "^4.10.38",
+    "puppeteer-core": "^25.12.0",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.5"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}

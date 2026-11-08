@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DC Legacy — the Dhaka College student hub</title>
+  <meta name="description" content="DC Legacy brings Dhaka College students, clubs and alumni together: college portal sync, club events and tickets, a study vault, jobs, alumni mentors and focus tools.">
+  <meta name="theme-color" content="#b92726">
+  <meta property="og:title" content="DC Legacy — the Dhaka College student hub">
+  <meta property="og:description" content="Students, clubs and alumni of Dhaka College in one app.">
+  <meta property="og:image" content="/og-image.png">
+  <meta property="og:type" content="website">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <script src="/native-redirect.js"></script>
+  <style>
+    :root { --red:#b92726; --red-d:#8f1d1c; --sky:#20bced; --bg:#f8f6f4; --card:#fff; --ink:#1e1414; --mut:#6b5f5f; --line:#e7e1dc; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#141012; --card:#1e1719; --ink:#f5eeee; --mut:#b5a8a8; --line:#33292b; --red:#d4524f; } }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+    a { color:inherit; }
+    .wrap { max-width:1040px; margin:0 auto; padding:0 20px; }
+    header { position:sticky; top:0; z-index:5; background:color-mix(in srgb,var(--bg) 88%,transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+    header .wrap { display:flex; align-items:center; gap:14px; height:62px; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:800; text-decoration:none; }
+    .brand img { width:34px; height:34px; }
+    nav { margin-left:auto; display:flex; gap:18px; align-items:center; font-size:15px; }
+    nav a { text-decoration:none; color:var(--mut); } nav a:hover { color:var(--ink); }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 20px; border-radius:12px; font-weight:700; text-decoration:none; border:1px solid var(--line); background:var(--card); color:var(--ink); }
+    .btn.primary { background:var(--red); border-color:var(--red); color:#fff; } .btn.primary:hover { background:var(--red-d); }
+    .hero { padding:56px 0 40px; display:grid; gap:32px; grid-template-columns:1.2fr .8fr; align-items:center; }
+    h1 { font-size:clamp(34px,6vw,56px); line-height:1.08; margin:0 0 16px; letter-spacing:-.02em; }
+    h1 em { font-style:normal; color:var(--red); }
+    .lead { font-size:18px; color:var(--mut); max-width:34em; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin:24px 0 12px; }
+    .note { font-size:13px; color:var(--mut); }
+    .crest { justify-self:center; width:min(300px,70%); filter:drop-shadow(0 18px 30px rgba(0,0,0,.18)); }
+    section { padding:44px 0; }
+    h2 { font-size:clamp(26px,4vw,36px); margin:0 0 8px; letter-spacing:-.01em; }
+    .sub { color:var(--mut); margin:0 0 26px; max-width:40em; }
+    .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px; }
+    .card h3 { margin:0 0 6px; font-size:18px; } .card p { margin:0; color:var(--mut); font-size:15px; }
+    .tag { display:inline-block; font-size:12px; font-weight:700; padding:3px 9px; border-radius:99px; background:color-mix(in srgb,var(--sky) 22%,transparent); margin-bottom:10px; }
+    details { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin-bottom:10px; }
+    summary { font-weight:700; cursor:pointer; } details p { color:var(--mut); margin:10px 0 0; }
+    .dl { text-align:center; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:36px 20px; }
+    footer { border-top:1px solid var(--line); padding:26px 0 40px; color:var(--mut); font-size:14px; }
+    footer .wrap { display:flex; flex-wrap:wrap; gap:8px 22px; }
+    @media (max-width:760px) { .hero { grid-template-columns:1fr; padding-top:32px; } .crest { order:-1; width:160px; } nav a.hide-sm { display:none; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <a class="brand" href="/"><img src="/logo-mark.png" alt="" width="34" height="34"> DC Legacy</a>
+    <nav><a class="hide-sm" href="#features">Features</a><a class="hide-sm" href="#faq">FAQ</a><a class="btn primary" href="/app.html">Open the app</a></nav>
+  </div></header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <h1>Dhaka College life, <em>in one app.</em></h1>
+        <p class="lead">Students, clubs and alumni in one place. Pull your notices, payments and results from the college portal, run your club's events and tickets, share study notes, find jobs and alumni mentors.</p>
+        <div class="cta"><a class="btn primary" href="/app.html">Open the web app</a><a class="btn" href="/download/android">Download for Android</a></div>
+        <p class="note">Unofficial student project, not affiliated with Dhaka College. Free, no ads. Portal sync works in the Android app.</p>
+      </div>
+      <img class="crest" src="/logo-mark.png" alt="Dhaka College crest">
+    </div>
+
+    <section id="features"><div class="wrap">
+      <h2>What you get</h2>
+      <p class="sub">Everything below works with any email address. Sign in with a 6-digit code, no password to remember.</p>
+      <div class="grid">
+        <div class="card"><span class="tag">Android app</span><h3>College portal sync</h3><p>Sign in once with your class roll and the college password. See your profile, notices, fee payments and exam list, and open your result transcript and class routine as PDFs.</p></div>
+        <div class="card"><h3>Clubs</h3><p>Club pages, events with tickets, polls and elections, announcements, merch orders, certificates and member recruitment.</p></div>
+        <div class="card"><h3>Study vault</h3><p>Notes, slides and past papers shared by seniors, with votes so the best material rises.</p></div>
+        <div class="card"><h3>Events, jobs and blog</h3><p>What's on at college, internships and jobs from alumni, and student posts.</p></div>
+        <div class="card"><h3>Alumni mentors</h3><p>Alumni add themselves and offer mentoring, so students can ask people who have been through it.</p></div>
+        <div class="card"><h3>Focus tools</h3><p>Study timer, flashcards with spaced repetition, an exam planner and deadline reminders. Google Classroom import included.</p></div>
+      </div>
+    </div></section>
+
+    <section id="download"><div class="wrap"><div class="dl">
+      <h2>Get DC Legacy</h2>
+      <p class="sub" style="margin:0 auto 22px">Use it in your browser, or install the Android app for portal sync and reminders.</p>
+      <div class="cta" style="justify-content:center"><a class="btn primary" href="/app.html">Open the web app</a><a class="btn" href="/download/android">Download the Android app</a><button class="btn" id="install-btn" hidden>Install as an app</button></div>
+      <p class="note" id="install-hint">Chrome and Edge can install the web app from the browser menu. On iPhone: Safari, Share, Add to Home Screen.</p>
+      <p class="note" id="dl-ver"></p>
+    </div></div></section>
+
+    <section id="faq"><div class="wrap">
+      <h2>Questions</h2>
+      <details><summary>Is this the official Dhaka College app?</summary><p>No. DC Legacy is an independent student project. It is not affiliated with, endorsed by or run by Dhaka College.</p></details>
+      <details><summary>What happens to my college portal password?</summary><p>You type it into the college portal's own login form on your phone, so it goes only to the portal, never to DC Legacy. If you choose to remember it, it is stored encrypted on your phone only.</p></details>
+      <details><summary>Why does portal sync need the Android app?</summary><p>A website can't sign in to another website for you. The Android app can open the college portal on your phone and read your own pages.</p></details>
+      <details><summary>Who can sign up?</summary><p>Students, club members and alumni, with any email address. Pick your role when you sign up.</p></details>
+      <details><summary>How do I delete my account?</summary><p>See the <a href="/delete-account.html">delete account page</a>.</p></details>
+    </div></section>
+  </main>
+
+  <footer><div class="wrap"><span>© DC Legacy · Unofficial, not affiliated with Dhaka College</span><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/delete-account.html">Delete account</a></div></footer>
+  <script type="module" src="/src/site.js"></script>
+</body>
+</html>

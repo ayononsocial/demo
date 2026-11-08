@@ -1,0 +1,23 @@
+{
+  "name": "DC Legacy — Dhaka College Student Hub",
+  "short_name": "DC Legacy",
+  "description": "Routine, advising planner, GPA, faculty reviews, study vault and fee reminders for Dhaka College students. Unofficial.",
+  "id": "/app.html",
+  "start_url": "/app.html#/home",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8f6f4",
+  "theme_color": "#b92726",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "My routine", "url": "/app.html#/routine", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Advising planner", "url": "/app.html#/planner", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Sync portal", "url": "/app.html#/sync", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
